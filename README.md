@@ -1,0 +1,4 @@
+VcardMerger
+===========
+
+Merge vcards
