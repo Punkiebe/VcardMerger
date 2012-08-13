@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml" fx:controller="be.nevies.vcardmerger.Contact">
+  <children>
+    <GridPane id="gridPane1" prefHeight="80.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <TextField id="textField1" fx:id="formattedName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <TextField id="textField2" fx:id="firstName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField id="textField4" fx:id="homeNumber" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+        <TextField id="textField5" fx:id="mobileNumber" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+        <TextField id="textField6" fx:id="email" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+        <Label id="label5" text="Home Nbr" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+        <Label id="label6" text="Gsm Nbr" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+        <Label id="label7" text="Work Nbr" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+        <TextField id="textField7" fx:id="lastName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextField id="textField8" fx:id="workNumber" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+        <Label id="label3" text="Email" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+        <Label id="label4" text="Address" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Label id="label2" text="Last Name" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Label id="label1" text="First Name" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label id="label8" text="Full Name" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField id="textField3" fx:id="address" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="95.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="109.0" minWidth="10.0" prefWidth="94.0" />
+        <ColumnConstraints hgrow="NEVER" maxWidth="79.0" minWidth="10.0" prefWidth="25.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="71.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="10.0" prefWidth="115.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>

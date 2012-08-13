@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml" fx:controller="be.nevies.vcardmerger.TabsAnchorPaneActions">
+  <children>
+    <VBox id="vBox1" prefHeight="600.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <MenuBar id="menuBar1" prefWidth="400.0" VBox.vgrow="NEVER">
+          <menus>
+            <Menu id="" mnemonicParsing="false" text="File" fx:id="menuFile">
+              <items>
+                <MenuItem id="" text="Save" />
+                <MenuItem id="" text="Quit" />
+              </items>
+            </Menu>
+            <Menu id="editMenu1" text="Edit">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#printToConsoleListOneAction" text="Print to console" fx:id="printConsoleMenu" />
+                <MenuItem id="delete1" text="Merge selected" />
+              </items>
+            </Menu>
+            <Menu id="helpMenu1" text="Help">
+              <items>
+                <MenuItem id="about1" text="About" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+        <TabPane id="tabPane1" prefHeight="536.0" prefWidth="400.0" tabClosingPolicy="UNAVAILABLE" tabMaxWidth="120.0" VBox.vgrow="NEVER">
+          <tabs>
+            <Tab id="tab2" closable="false" text="Contact List One">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                    <Button fx:id="openContactListOneButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#listOneButtonAction" text="Open" />
+                    <VBox fx:id="anchorPaneListOne" prefHeight="505.0" prefWidth="400.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab id="tab1" closable="false" text="Contact List Two">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab id="tab3" closable="false" text="Contact List Merged">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+        <AnchorPane id="anchorPane1" prefHeight="40.0" prefWidth="400.0" VBox.vgrow="NEVER" />
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
